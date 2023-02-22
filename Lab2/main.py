@@ -29,7 +29,7 @@ print("форма массива X_new: {}".format(X_new.shape))
 
 prediction = knn.predict(X_new)
 print("Прогноз: {}".format(prediction))
-print("Спрогнозированнаяметка: {}".format(iris_dataset['target_names'][prediction]))
+print("Спрогнозированная метка: {}".format(iris_dataset['target_names'][prediction]))
 
 y_pred = knn.predict(X_test)
 print("Прогнозы для тестового набора:\n{}".format(y_pred))
