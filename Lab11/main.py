@@ -18,13 +18,17 @@ plt.show()
 
 mglearn.plots.plot_two_hidden_layer_graph()
 plt.show()
-
+# существуют  различные  способы  регулировать  сложность нейронной  сети:
+# количество  скрытых  слоев, количество  элементов  в  каждом  скрытом  слоеи регуляризация (alpha).
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPClassifier
 from sklearn.datasets import make_moons
 X, y = make_moons(n_samples=100, noise=0.25, random_state=3)
 X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, random_state=42)
 
+
+#Несмотря на то что глубокое обучение сулит большие перспективы в различных сферах применения машинного обучения,
+# алгоритмы глубоко обучения, как правило, жестко привязаны к конкретным случаям использования.
 mlp = MLPClassifier(solver='lbfgs', random_state=0,max_iter=10000).fit(X_train, y_train)
 mglearn.plots.plot_2d_separator(mlp, X_train, fill=True, alpha=.3)
 mglearn.discrete_scatter(X_train[:, 0], X_train[:, 1], y_train)
@@ -114,3 +118,5 @@ plt.xlabel("Столбцы матрицы весов")
 plt.ylabel("Входная характеристика")
 plt.colorbar()
 plt.show()
+
+

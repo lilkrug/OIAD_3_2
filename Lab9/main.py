@@ -32,6 +32,7 @@ forest.fit(X_train, y_train)
 print("Правильность на обучающем наборе: {:.3f}".format(forest.score(X_train, y_train)))
 print("Правильность на тестовом наборе: {:.3f}".format(forest.score(X_test, y_test)))
 
+# Они обладают высокой прогнозной силой, часто  дают  хорошее  качество  модели  без  утомительной  настройкипараметров  и  не  требуют масштабирования данных.
 
 def plot_feature_importances_cancer(model):
     n_features = cancer.data.shape[1]
@@ -48,7 +49,8 @@ from sklearn.ensemble import GradientBoostingClassifier
 
 X_train, X_test, y_train, y_test = train_test_split(cancer.data,
                                                     cancer.target, random_state=0)
-
+# Несмотря на слово«регрессия»  в  названии,  эти  модели  можно  использовать  для  регрессии  и  классификации.  В отличие от случайного леса,
+# градиентный бустинг строит последовательность деревьев, в которой каждое дерево пытается исправить ошибки предыдущего
 gbrt = GradientBoostingClassifier(random_state=0)
 gbrt.fit(X_train, y_train)
 print("Правильность на обучающем наборе: {:.3f}".format(gbrt.score(X_train, y_train)))
@@ -78,3 +80,11 @@ def plot_feature_importances_cancer(model):
 
 
 plot_feature_importances_cancer(gbrt)
+
+# Ансамбли - методы которые сочетают в себе множество моделей машинного обучения чтобы в итоге получить более мощнкю модель
+
+# Настоящее время случайные леса регрессии и классификации являются одним из наиболее широко используемых методов машинного обучения
+
+
+# Несмотря на то, что построение случайных лесов на больших наборах данных может занимать определенное время, его можно легко распараллелить между несколькими  ядрами  процессора  в  компьютере.
+

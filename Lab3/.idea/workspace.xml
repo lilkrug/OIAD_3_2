@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a867f33-b65d-4ea2-8dd5-d5ea601116e1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Lab2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="3a867f33-b65d-4ea2-8dd5-d5ea601116e1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +25,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Education/3 курс 2 сем/OIAD/Lab6",
+    "last_opened_file_path": "D:/Education/3 курс 2 сем/OIAD/Lab4",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
